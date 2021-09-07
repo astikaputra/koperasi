@@ -4,7 +4,7 @@
 ?>
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="kotak">
-              <form method="post" action="<?php echo base_url();?>shopping/tambah" method="post" accept-charset="utf-8">
+              <form method="post" action="<?php echo base_url();?>index.php/shopping/tambah" method="post" accept-charset="utf-8">
                 <center><a href="#"><img class="img-thumbnail" src="<?php echo base_url() . 'assets/images/'.$row['gambar']; ?>"/></a></center>
                 <div class="card-body">
                   <h4 class="card-title">
@@ -15,7 +15,7 @@
                  <!-- <p class="card-text"><?php echo $row['deskripsi'];?></p> -->
                 </div>
                 <div class="card-footer">
-                  <a href="<?php echo base_url();?>shopping/detail_produk/<?php echo $row['id_produk'];?>" class="btn btn-sm btn-default"><i class="glyphicon glyphicon-search"></i> Detail</a> 
+                  <a href="<?php echo base_url();?>index.php/shopping/detail_produk/<?php echo $row['id_produk'];?>" class="btn btn-sm btn-default"><i class="glyphicon glyphicon-search"></i> Detail</a> 
                   
                   <input type="hidden" name="id" value="<?php echo $row['id_produk']; ?>" />
                   <input type="hidden" name="nama" value="<?php echo $row['nama_produk']; ?>" />
