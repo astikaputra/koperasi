@@ -173,13 +173,13 @@ if ( ! function_exists('generatehtml'))
     	if($id>0)
 			{
 	?>
-	<li class="active" ><a href="<?php echo base_url()?>index.php/<?php echo  $modul_input;?>/edit/<?php echo $id?>" ><i class="glyphicon glyphicon-pencil"></i> Data <?php echo $caption;?></a></li>
+	<li class="active" ><a href="<?php echo base_url()?><?php echo  $modul_input;?>/edit/<?php echo $id?>" ><i class="glyphicon glyphicon-pencil"></i> Data <?php echo $caption;?></a></li>
     <?php
 			}
 		
 	?>
-    <li <?php if($id<=0) { ?> class="active" <?php } ?>><a href="<?php echo base_url()?>index.php/<?php echo  $modul_input;?>/input" ><i class="glyphicon glyphicon-plus"></i>  Input <?php echo $caption;?> Baru</a></li>
-        <li><a href="<?php echo base_url()?>index.php/<?php echo  $modul_browse;?>" ><i class="glyphicon glyphicon-folder-open"></i> Browse <?php echo $caption;?></a></li>
+    <li <?php if($id<=0) { ?> class="active" <?php } ?>><a href="<?php echo base_url()?><?php echo  $modul_input;?>/input" ><i class="glyphicon glyphicon-plus"></i>  Input <?php echo $caption;?> Baru</a></li>
+        <li><a href="<?php echo base_url()?><?php echo  $modul_browse;?>" ><i class="glyphicon glyphicon-folder-open"></i> Browse <?php echo $caption;?></a></li>
 
 </ul><br />
 	<?php

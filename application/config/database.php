@@ -75,8 +75,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'siloam',
+	'hostname' => '10.83.128.87',
+	'username' => 'astika',
 	'password' => '51l04mH05p1t4l5!',
 	'database' => 'db_ksa',
 	'dbdriver' => 'mysqli',

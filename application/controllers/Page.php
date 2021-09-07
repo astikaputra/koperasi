@@ -118,7 +118,7 @@ class Page extends CI_Controller {
           alert("Silahkan Login terlebih dahulu untuk cek saldo !!!");
         </script>
         <?php
-          echo "<meta http-equiv='refresh' content='0; url=".base_url()."page/login'>";
+          echo "<meta http-equiv='refresh' content='0; url=".base_url()."index.php/page/login'>";
       }else{
 
       	$datanik['nik'] = $this->session->userdata('nik');

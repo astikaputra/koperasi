@@ -8,17 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Koperasi Sidhu Artha Online</title>
-	<link href="<?php echo base_url()?>index.php/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+	<link href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="<?php echo base_url()?>index.php/assets/asie/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/asie/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo base_url()?>index.php/assets/custom.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>index.php/assets/jquery/jquery-ui.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/custom.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/jquery/jquery-ui.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="<?php echo base_url()?>index.php/assets/asie/js/ie-emulation-modes-warning.js"></script>
+    <script src="<?php echo base_url()?>assets/asie/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,13 +39,13 @@
             <span class="icon-bar"></span>
             < class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="<?php echo base_url()?>index.php/assets/logos2.png"></a>
+          <a class="navbar-brand" href="#"><img src="<?php echo base_url()?>assets/logos2.png"></a>
 
         
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="<?php echo base_url()?>index.php/">Home</a></li>
+            <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
             <li><a href="<?php echo base_url()?>index.php/page/tentang"><i class="glyphicon glyphicon-user"></i>Tentang</a></li>
             <li><a href="<?php echo base_url()?>index.php/page/cara_bayar"><i class="glyphicon glyphicon-briefcase"></i>Cara Bayar</a></li>
             <li><a href="<?php echo base_url()?>index.php/shopping/tampil_cart"><i class="glyphicon glyphicon-shopping-cart"></i>Keranjang Belanja</a></li>
