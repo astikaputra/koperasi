@@ -8,17 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Koperasi Sidhu Artha Online</title>
-	<link href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+	<link href="<?php echo base_url()?>/index.php/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="<?php echo base_url()?>assets/asie/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>/index.php/assets/asie/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo base_url()?>assets/custom.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/jquery/jquery-ui.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>/index.php/assets/custom.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>/index.php/assets/jquery/jquery-ui.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="<?php echo base_url()?>assets/asie/js/ie-emulation-modes-warning.js"></script>
+    <script src="<?php echo base_url()?>/index.php/assets/asie/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,22 +39,22 @@
             <span class="icon-bar"></span>
             < class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="<?php echo base_url()?>assets/logos2.png"></a>
+          <a class="navbar-brand" href="#"><img src="<?php echo base_url()?>/index.php/assets/logos2.png"></a>
 
         
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
-            <li><a href="<?php echo base_url()?>page/tentang"><i class="glyphicon glyphicon-user"></i>Tentang</a></li>
-            <li><a href="<?php echo base_url()?>page/cara_bayar"><i class="glyphicon glyphicon-briefcase"></i>Cara Bayar</a></li>
-            <li><a href="<?php echo base_url()?>shopping/tampil_cart"><i class="glyphicon glyphicon-shopping-cart"></i>Keranjang Belanja</a></li>
-            <li><a href="<?php echo base_url()?>page/cek_saldo"><i class="glyphicon glyphicon-hand-right"></i>Cek Saldo</a></li>
-            <li><a href="<?php echo base_url()?>page/cek_order"><i class="glyphicon glyphicon-ok"></i>Cek Order</a></li>
-            <li><a href="<?php echo base_url()?>page/download"><i class="glyphicon glyphicon-search"></i> Download</a></li>
+            <li class="active"><a href="<?php echo base_url()?>/index.php/">Home</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/page/tentang"><i class="glyphicon glyphicon-user"></i>Tentang</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/page/cara_bayar"><i class="glyphicon glyphicon-briefcase"></i>Cara Bayar</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/shopping/tampil_cart"><i class="glyphicon glyphicon-shopping-cart"></i>Keranjang Belanja</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/page/cek_saldo"><i class="glyphicon glyphicon-hand-right"></i>Cek Saldo</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/page/cek_order"><i class="glyphicon glyphicon-ok"></i>Cek Order</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/page/download"><i class="glyphicon glyphicon-search"></i> Download</a></li>
             <?php if($this->session->userdata('nik')!=""){?>
-            <li><a href="<?php echo base_url()?>page/history"><i class="glyphicon glyphicon-search"></i> History Order</a></li>           
-            <li><a href="<?php echo base_url()?>page/gantipassword"><i class="glyphicon glyphicon-log-in"></i> Ganti Password</a></li>
+            <li><a href="<?php echo base_url()?>/index.php/page/history"><i class="glyphicon glyphicon-search"></i> History Order</a></li>           
+            <li><a href="<?php echo base_url()?>/index.php/page/gantipassword"><i class="glyphicon glyphicon-log-in"></i> Ganti Password</a></li>
             <?php }?>
             </ul>
         </div><!--/.nav-collapse -->
@@ -71,28 +71,28 @@
         <div class="list-group">
             <a class="list-group-item"><strong>Data Akun</strong></a>
             <?php if($this->session->userdata('nik')==""){ ?>
-            <a class="list-group-item" href="<?php echo base_url()?>page/login" >Login</a>  
+            <a class="list-group-item" href="<?php echo base_url()?>/index.php/page/login" >Login</a>  
               <?php }else{?>
             <a class="list-group-item"><?php echo $this->session->userdata('nama');?></a>
-            <a class="list-group-item" href="<?php echo base_url()?>page/logout"><i class="glyphicon glyphicon-log-out"></i>Log Out</a>
+            <a class="list-group-item" href="<?php echo base_url()?>/index.php/page/logout"><i class="glyphicon glyphicon-log-out"></i>Log Out</a>
             <?php }?>
         </div>
           <div class="list-group">
           	<a class="list-group-item"><strong>KATEGORI</strong></a>
-            <a  href="<?php echo base_url()?>shopping/index/" class="list-group-item">SEMUA BARANG</a>
-            <a  href="<?php echo base_url()?>shopping/index1/" class="list-group-item">BARANG DENGAN STOK</a>
+            <a  href="<?php echo base_url()?>/index.php/shopping/index/" class="list-group-item">SEMUA BARANG</a>
+            <a  href="<?php echo base_url()?>/index.php/shopping/index1/" class="list-group-item">BARANG DENGAN STOK</a>
           	<?php
 		          	foreach ($kategori as $row) 
 						{
 			?>
-            <a href="<?php echo base_url()?>shopping/index/<?php echo $row['id'];?>" class="list-group-item"><?php echo $row['nama_kategori'];?></a>
+            <a href="<?php echo base_url()?>/index.php/shopping/index/<?php echo $row['id'];?>" class="list-group-item"><?php echo $row['nama_kategori'];?></a>
             <?php
 						}
 			?>
           </div><br>
 
            <div class="list-group">
-           <a href="<?php echo base_url()?>shopping/tampil_cart" class="list-group-item"><strong><i class="glyphicon glyphicon-shopping-cart"></i> KERANJANG BELANJA</strong></a>
+           <a href="<?php echo base_url()?>/index.php/shopping/tampil_cart" class="list-group-item"><strong><i class="glyphicon glyphicon-shopping-cart"></i> KERANJANG BELANJA</strong></a>
           <?php 
 		  
 		  	$cart= $this->cart->contents();

@@ -1,7 +1,7 @@
 <h2>Halaman Login</h2>
 <div class="kotak2">
  <?php echo $this->session->flashdata('berhasil') ?>
-       <form class="form-horizontal" action="<?php echo base_url()?>page/validate" method="post" name="frmCO" id="frmCO">
+       <form class="form-horizontal" action="<?php echo base_url()?>/index.php/page/validate" method="post" name="frmCO" id="frmCO">
         <div class="form-group  has-success has-feedback">
             <label class="control-label col-xs-3" for="inputEmail">NIK:</label>
             <div class="col-xs-9">

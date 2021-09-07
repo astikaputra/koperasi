@@ -10,7 +10,7 @@ if ($cart = $this->cart->contents())
 			}
 		echo "<h4>Total Belanja: Rp.".number_format($grand_total,0,",",".")."</h4>";	
 ?>
-<form class="form-horizontal" action="<?php echo base_url()?>shopping/proses_order" method="post" name="frmCO" id="frmCO">
+<form class="form-horizontal" action="<?php echo base_url()?>/index.php/shopping/proses_order" method="post" name="frmCO" id="frmCO">
         <div class="form-group  has-success has-feedback">
             <label class="control-label col-xs-3" for="inputEmail">Email:</label>
             <div class="col-xs-9">

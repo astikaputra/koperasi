@@ -1,7 +1,7 @@
 <h2>Ganti Password</h2>
 <div class="kotak2">
  <?php echo $this->session->flashdata('berhasil') ?>
-       <form class="form-horizontal" action="<?php echo base_url()?>page/do_password" method="post" name="frmCO" id="frmCO">
+       <form class="form-horizontal" action="<?php echo base_url()?>/index.php/page/do_password" method="post" name="frmCO" id="frmCO">
         <div class="form-group  has-success has-feedback">
             <label class="control-label col-xs-3" for="inputEmail">Password Lama :</label>
             <div class="col-xs-9">

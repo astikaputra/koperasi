@@ -33,7 +33,7 @@
       </form>
 </div>
 
-<form action="<?php echo base_url()?>shopping/save_order" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
+<form action="<?php echo base_url()?>/index.php/shopping/save_order" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
 <?php
 	if ($cart = $this->cart->contents())
 		{
@@ -103,7 +103,7 @@ if($grand_total>500000){?>
 <input type="hidden" name="grantotal" value="<?php echo $grand_total;?>">
 <button  type="submit" class ='btn btn-sm btn-primary'>Save Order</button>
 <?php } else { echo "<b>Saldo anda tidak cukup   </b>";}?>
-<a href="<?php echo base_url()?>shopping/tampil_cart"  class ='btn btn-sm btn-default'>Kembali</a></td>
+<a href="<?php echo base_url()?>/index.php/shopping/tampil_cart"  class ='btn btn-sm btn-default'>Kembali</a></td>
 </tr>
 </table>
 <?php
@@ -121,7 +121,7 @@ if($grand_total>500000){?>
     <div class="modal-dialog modal-md">
       <!-- Modal content-->
       <div class="modal-content">
-      	<form method="post" action="<?php echo base_url()?>shopping/hapus/all">
+      	<form method="post" action="<?php echo base_url()?>/index.php/shopping/hapus/all">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Konfirmasi</h4>

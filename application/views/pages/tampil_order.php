@@ -1,7 +1,7 @@
 <h2>Berikut data order online yang sudah bisa di ambil</h2>
 
 
-<form action="<?php echo base_url()?>shopping/save_order" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
+<form action="<?php echo base_url()?>/index.php/shopping/save_order" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
 <?php
 	if ($order)
 		{
