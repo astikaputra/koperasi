@@ -100,7 +100,7 @@ class Shopping extends CI_Controller {
           alert("Silahkan Login terlebih dahulu untuk melakukan order !!!");
       </script>
       <?php
-          echo "<meta http-equiv='refresh' content='0; url=".base_url()."page/login'>";
+          echo "<meta http-equiv='refresh' content='0; url=".base_url()."index.php/page/login'>";
       }else{
 
 		$data_produk= array('id' => $this->input->post('id'),
@@ -159,7 +159,7 @@ class Shopping extends CI_Controller {
           alert("anda belum login atau session anda sudah habis!!!");
       </script>
       <?php
-          echo "<meta http-equiv='refresh' content='0; url=".base_url()."page/login'>";
+          echo "<meta http-equiv='refresh' content='0; url=".base_url()."index.php/page/login'>";
       }else{
 		//-------------------------Input data order--------------------------
 		$data_order = array('nik' => $this->input->post('nik'),
