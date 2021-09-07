@@ -1,5 +1,5 @@
 <h2>Daftar Belanja</h2>
-<form action="<?php echo base_url()?>/index.php/shopping/ubah_cart" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
+<form action="<?php echo base_url()?>index.php/shopping/ubah_cart" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
 <?php
 	if ($cart = $this->cart->contents())
 		{
@@ -36,7 +36,7 @@ $grand_total = $grand_total + $item['subtotal'];
 <td><?php echo number_format($item['price'], 0,",","."); ?></td>
 <td><input type="text" class="form-control input-sm" name="cart[<?php echo $item['id'];?>][qty]" value="<?php echo $item['qty'];?>" /></td>
 <td><?php echo number_format($item['subtotal'], 0,",",".") ?></td>
-<td><a href="<?php echo base_url()?>/index.php/shopping/hapus/<?php echo $item['rowid'];?>" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a></td>
+<td><a href="<?php echo base_url()?>index.php/shopping/hapus/<?php echo $item['rowid'];?>" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a></td>
 <?php endforeach; ?>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ $grand_total = $grand_total + $item['subtotal'];
 <td colspan="4" align="right">
 <a data-toggle="modal" data-target="#myModal"  class ='btn btn-sm btn-danger'>Kosongkan Cart</a>
 <button class='btn btn-sm btn-success'  type="submit">Update Cart</button>
-<a href="<?php echo base_url()?>/index.php/shopping/check_out"  class ='btn btn-sm btn-primary'>Check Out</a>
+<a href="<?php echo base_url()?>index.php/shopping/check_out"  class ='btn btn-sm btn-primary'>Check Out</a>
 </tr>
 
 </table>
@@ -63,7 +63,7 @@ $grand_total = $grand_total + $item['subtotal'];
     <div class="modal-dialog modal-md">
       <!-- Modal content-->
       <div class="modal-content">
-      	<form method="post" action="<?php echo base_url()?>/index.php/shopping/hapus/all">
+      	<form method="post" action="<?php echo base_url()?>index.php/shopping/hapus/all">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Konfirmasi</h4>
